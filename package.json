@@ -1,0 +1,26 @@
+{
+  "name": "widget-boot",
+  "version": "1.0.0",
+  "description": "Bootstrap a widget using some common patterns",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jshint": "^2.5.5",
+    "tap": "^0.4.12",
+    "tape": "^2.14.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jshint lib/*.js && ./node_modules/.bin/tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.rmcloud.com/npm-modules/widget-boot.git"
+  },
+  "bugs": {
+    "url": "http://gitlab.rmcloud.com/npm-modules/widget-boot/issues"
+  },
+  "homepage": "http://gitlab.rmcloud.com/npm-modules/widget-boot",
+  "publishConfig": {
+    "registry": "http://npm.rmcloud.com:8123"
+  }
+}
