@@ -1,9 +1,10 @@
 {
   "name": "widget-boot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bootstrap a widget using some common patterns",
   "main": "lib/index.js",
   "dependencies": {
+    "URIjs": "^1.14.1",
     "camel-case": "~1.0.2",
     "lodash.assign": "^2.4.1",
     "react": "~0.13.0-alpha.1",
