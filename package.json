@@ -1,6 +1,6 @@
 {
   "name": "widget-boot",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Bootstrap a widget using some common patterns",
   "main": "lib/index.js",
   "dependencies": {
