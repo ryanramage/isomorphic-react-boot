@@ -3,15 +3,39 @@
 Bootstrap a widget using some common patterns
 
 ```
-npm install widget-boot
+npm install isomorphic-react-boot
 ```
 
-Note, seaport support has been move out of this package into seaport-autopilot
 
 ## Usage
 
 ``` js
-var widget-boot = require('widget-boot')
+
+var React = require('react')
+var isomorphic = require('isomorphic-react-boot')
+var YourWidget = React.createFactory(require('./YourWidget'))
+var about = require('../package.json')
+var widget_path = about.name.replace(/^widget-/, '')
+
+exports.start = function(){
+
+    var server = new Hapi.Server();
+    server.connection({ 'port': 8785 });
+
+    server.route({
+      method: 'GET',
+      path: '/',
+      handler: function(req, reply) {
+
+        var props = {
+          list: true,
+          itemMode: false,
+          asset_url: 'http://localhost:8785/assets'
+        }
+        isomorphic(about.name, props, React, YourWidget, reply);
+      })
+    })
+
 ```
 
 ## License
