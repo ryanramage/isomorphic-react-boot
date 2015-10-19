@@ -1,6 +1,6 @@
 # widget-boot
 
-Bootstrap a widget using some common patterns
+Bootstrap a widget using some common patterns. Not really for public consumption at this point.
 
 ```
 npm install isomorphic-react-boot
@@ -12,6 +12,7 @@ npm install isomorphic-react-boot
 ``` js
 
 var React = require('react')
+var ReactDOM = require('react-dom/server')
 var isomorphic = require('isomorphic-react-boot')
 var YourWidget = React.createFactory(require('./YourWidget'))
 var about = require('../package.json')

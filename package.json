@@ -1,11 +1,12 @@
 {
-  "name": "widget-boot",
+  "name": "isomorphic-react-boot",
   "version": "5.0.0",
-  "description": "Bootstrap a widget react widget for isomorphic use",
+  "description": "Bootstrap a react widget for isomorphic use.",
   "main": "lib/index.js",
   "dependencies": {
     "camel-case": "~1.0.2",
-    "mustache": "^1.0.0"
+    "mustache": "^1.0.0",
+    "react-dom": "^0.14.0"
   },
   "devDependencies": {
     "standard": "^5.3.1"
@@ -15,10 +16,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://gitlab.rmcloud.com/npm-modules/widget-boot.git"
+    "url": "https://github.com/ryanramage/isomorphic-react-boot.git"
   },
   "bugs": {
-    "url": "http://gitlab.rmcloud.com/npm-modules/widget-boot/issues"
+    "url": "https://github.com/ryanramage/isomorphic-react-boot/issues"
   },
-  "homepage": "http://gitlab.rmcloud.com/npm-modules/widget-boot"
+  "homepage": "https://github.com/ryanramage/isomorphic-react-boot"
 }
