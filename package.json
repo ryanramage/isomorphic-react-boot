@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-react-boot",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Bootstrap a react widget for isomorphic use.",
   "main": "lib/index.js",
   "dependencies": {

@@ -16,9 +16,8 @@ var ReactDOM = require('react-dom/server')
 var isomorphic = require('isomorphic-react-boot')
 var YourWidget = React.createFactory(require('./YourWidget'))
 var about = require('../package.json')
-var widget_path = about.name.replace(/^widget-/, '')
 
-exports.start = function(){
+exports.start = function() {
 
     var server = new Hapi.Server();
     server.connection({ 'port': 8785 });
@@ -33,9 +32,10 @@ exports.start = function(){
           itemMode: false,
           asset_url: 'http://localhost:8785/assets'
         }
-        isomorphic(about.name, props, React, YourWidget, reply);
+        isomorphic(about.name, props, ReactDOM, YourWidget, reply);
       })
     })
+}
 
 ```
 
